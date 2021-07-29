@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex ;
+    width: 100%;
+    height: 7.5vh ;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#logo{
+    color: white;
+}
+
+nav{
+    height: 7.5vh;
+    width: 45vw;
+}
+
+#container{
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+    margin-left: 4em;
+}
+
+.li-header{
+    list-style-type: none;
+    width: 25%;
+    height: 100%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+
+.li-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Monoton', cursive;
+    padding-right: 5px;
+}
+
+#searchPart{
+    height: 6.5vh;
+    width: 100%;
+    background-color: rgba(61, 49, 49, 0.904);
+    border-bottom:black solid 1em ;
+}
+
+input{
+    width: 15%;
+    height: 90%;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    text-align: center;
+    font-size: medium;
+    border: solid 2px black;
+}
+
+#searchBtn{
+    width: 3%;
+    height: 90%;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+#searchBtn i{
+    font-size: large;
+}
+
+
+
+
+
+#formPart{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 1em;
+    margin: 10vh 25%;
+}
+
+form{
+    margin-top: 5vh;
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+form input{
+    width: 90%;
+    height: 3.5vh;
+    margin: 0.1em;
+}
+
+
+form input[type=radio]{
+    width: 10%;
+}
+
+
+.formBtn{
+    height: 5vh;
+}
+
+select{
+    width: 92%;
+    height: 5vh;
+    font-size: medium;
+}
+
+.guidenessTitle{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(221, 231, 233);
+    margin-top: 5vh;
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+footer{
+    background-color: black;
+    height: 4vh;
+    width: 100%;
+    padding-top: 0.5em;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/*************************************ResponsivePart************************/
+
+
+
+@media screen and (max-width: 768px) {
+
+    #logo{
+        font-size: x-large;
+    }
+
+    #container{
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        direction: rtl;
+        margin-left: 4em;
+    }
+    
+    .li-header{
+        list-style-type: none;
+        width: 5%;
+        height: 100%;
+        font-size: medium;
+        display: flex;
+        align-items: center;
+    }
+    
+    .li-header a{
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    }
+    
+    
+    input{
+        width: 20%;
+        text-align: center;
+        font-size: small;
+    }
+    
+    #searchBtn{
+        width: 5%;
+        height: 90%;
+    }
+    
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 426px) {
+
+    #logo{
+        font-size: large;
+    }
+    
+    nav{
+        height: 7.5vh;
+        width: 70vw;
+    }
+    
+    #container{
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        direction: rtl;
+        margin-left: 4em;
+    }
+    
+    .li-header{
+        
+        height: 100%;
+    }
+    
+    .li-header a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: small;
+    }
+    
+    input{
+        width: 32%;
+        height: 85%;
+        font-size: small; 
+    }
+    
+    #searchBtn{
+        width: 8%;
+        height: 85%;
+    }
+    
+
+    #formPart{
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.349);
+        border-radius: 1em;
+        margin: 10vh 10%;
+    }
+    
+    form{
+        margin-top: 5vh;
+        height: 80vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    label{
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+    }
+
+    form input::placeholder, textarea::placeholder{
+        font-size: smaller;
+    }
+    
+
+    select{
+        font-size: small;
+    }
+
+}
+

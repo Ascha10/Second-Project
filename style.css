@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex ;
+    width: 100%;
+    height: 7.5vh ;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#logo{
+    color: white;
+}
+
+nav{
+    height: 7.5vh;
+    width: 45vw;
+}
+
+#container{
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+    margin-left: 4em;
+}
+
+.li-header{
+    list-style-type: none;
+    width: 25%;
+    height: 100%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+
+.li-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Monoton', cursive;
+    padding-right: 5px;
+}
+
+#searchPart{
+    height: 6.5vh;
+    width: 100%;
+    background-color: rgba(61, 49, 49, 0.904);
+    border-bottom:black solid 1em ;
+}
+
+input{
+    width: 15%;
+    height: 90%;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    text-align: center;
+    font-size: medium;
+    border: solid 2px black;
+}
+
+#searchBtn{
+    width: 3%;
+    height: 90%;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+#searchBtn i{
+    font-size: large;
+}
+
+
+#ourMoto{
+    height: 30vh;
+    width: 100%;
+    background-image: url(/media/wave-81840_1280.jpg) ;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: changingPictures;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-iteration-count: infinite;
+}
+
+@keyframes changingPictures {
+
+    0%{
+
+    }
+
+    50%{
+        background-image: url(/media/abstract-background-1061100_1920.jpg);
+    }
+
+    100%{
+        background-image: url(/media/tech-3041437_1920.jpg);
+    }
+    
+}
+
+#ourMoto pre{
+    color: white;
+    position: absolute;
+    font-size: xxx-large;
+    font-weight: bolder;
+    top: 12%;
+    left: 1%;
+}
+
+#cardPart{
+    width: 100%;
+    height: 65vh;
+    background-image: url(/media/cores-4552918_1920.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: black solid 1em;
+}
+
+#cardPart article{
+    width: 25%;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-top: 7vh;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cardPart article h1{
+    margin-top: 5vh;
+}
+
+#cardPart article p{
+    text-align: justify;
+    padding: 1em;
+}
+
+#cardPart article div i{
+    font-size: 10em;
+    transition: font-size 1s;
+}
+
+#cardPart article div i:hover{
+    font-size: 12em;
+}
+
+.readMoreBtn{
+    width: 25%;
+    height: 7%;
+}
+
+.readMoreBtn a{
+    color: black;
+}
+
+
+footer{
+    background-color: black;
+    height: 4vh;
+    width: 100%;
+    padding-top: 0.5em;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************************************ResponsivePart**********************************/
+
+@media screen and (max-width: 768px) {
+
+    #logo{
+        font-size: x-large;
+    }
+
+    #container{
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        direction: rtl;
+        margin-left: 4em;
+    }
+    
+    .li-header{
+        list-style-type: none;
+        width: 5%;
+        height: 100%;
+        font-size: medium;
+        display: flex;
+        align-items: center;
+    }
+    
+    .li-header a{
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    }
+    
+    
+    input{
+        width: 20%;
+        text-align: center;
+        font-size: small;
+    }
+    
+    #searchBtn{
+        width: 5%;
+        height: 90%;
+    }
+    
+    #cardPart{
+        width: 100%;
+        height: 90vh;
+        background-image: url(/media/cores-4552918_1920.jpg);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: black solid 1em;
+    }
+    
+    #cardPart article{
+        width: 30%;
+        height: 70vh;
+        background-color: rgba(255, 255, 255, 0.603);
+        margin-top: 7vh;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #cardPart article h1{
+        margin-top: 1vh;
+    }
+    
+    #cardPart article p{
+        text-align: justify;
+        padding: 1em;
+    }
+    
+    #cardPart article div i{
+        font-size: 9em;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+
+    
+    #logo{
+        font-size: large;
+    }
+    
+    nav{
+        height: 7.5vh;
+        width: 70vw;
+    }
+    
+    #container{
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        direction: rtl;
+        margin-left: 4em;
+    }
+    
+    .li-header{
+        
+        height: 100%;
+    }
+    
+    .li-header a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: small;
+    }
+    
+    input{
+        width: 32%;
+        height: 85%;
+        font-size: small; 
+    }
+    
+    #searchBtn{
+        width: 8%;
+        height: 85%;
+    }
+    
+    
+    #ourMoto{
+        height: 25vh;
+    }
+    
+    #ourMoto pre{
+        font-size: xx-large;
+    }
+    
+    #cardPart{
+        width: 100%;
+        height: 250vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #cardPart article{
+        width: 100%;
+        height: 65vh;
+        background-color: rgba(255, 255, 255, 0.603);
+    }
+    
+    
+    #cardPart article p{
+        font-size: larger;
+        text-align: justify;
+        padding: 1em;
+    }
+
+    
+}
+
+
+
+
