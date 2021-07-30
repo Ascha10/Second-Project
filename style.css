@@ -84,7 +84,7 @@ input{
 #ourMoto{
     height: 30vh;
     width: 100%;
-    background-image: url(/media/wave-81840_1280.jpg) ;
+    background-image: url(media/wave-81840_1280.jpg) ;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,11 +102,11 @@ input{
     }
 
     50%{
-        background-image: url(/media/abstract-background-1061100_1920.jpg);
+        background-image: url(media/abstract-background-1061100_1920.jpg);
     }
 
     100%{
-        background-image: url(/media/tech-3041437_1920.jpg);
+        background-image: url(media/tech-3041437_1920.jpg);
     }
     
 }
@@ -123,7 +123,7 @@ input{
 #cardPart{
     width: 100%;
     height: 65vh;
-    background-image: url(/media/cores-4552918_1920.jpg);
+    background-image: url(media/cores-4552918_1920.jpg);
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-evenly;
@@ -235,7 +235,7 @@ footer{
     #cardPart{
         width: 100%;
         height: 90vh;
-        background-image: url(/media/cores-4552918_1920.jpg);
+        background-image: url(media/cores-4552918_1920.jpg);
         background-repeat: no-repeat;
         display: flex;
         justify-content: space-evenly;
